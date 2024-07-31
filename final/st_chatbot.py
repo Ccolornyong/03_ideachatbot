@@ -276,7 +276,7 @@ if option == 'Gemini-Bot':
                 {"input":prompt},
                 config = {"configurable":{"session_id":"abc123"}}
             )      
-            st.markdown(response.text)
+            st.markdown(response['answer'])
 
     # if "chat_session" not in st.session_state:    
     #     st.session_state["chat_session"] = model.start_chat(history=[])
